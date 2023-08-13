@@ -1,1 +1,1 @@
-# OtusLessons
+Repository for OTUS home work
