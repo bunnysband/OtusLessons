@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34003.232
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OtusDbData.Console", "OtusDbData.Console\OtusDbData.Console.csproj", "{4BA0D8C3-0DAD-4627-ABC1-3EF9B6AFFB8B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OtusDbData.Models", "OtusDbData.Models\OtusDbData.Models.csproj", "{F182BA09-FFCD-4BCA-B40C-D63C9101195F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OtusDbData.EF", "OtusDbData.EF\OtusDbData.EF.csproj", "{E5CCEC28-1F1D-47F8-9E02-29AD2A7095A3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OtusDbData.Interfaces", "OtusDbData.Interfaces\OtusDbData.Interfaces.csproj", "{95F80A29-77F5-47A9-8E97-88CDC7C9B788}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OtusDbData.Contracts", "OtusDbData.Contracts\OtusDbData.Contracts.csproj", "{10DB2FA1-6AB5-4F72-8E25-DFEAC9B64CE1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OtusDbData.Services", "OtusDbData.Services\OtusDbData.Services.csproj", "{3081058A-2C8C-4215-A49A-DC51C7CA659F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4BA0D8C3-0DAD-4627-ABC1-3EF9B6AFFB8B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4BA0D8C3-0DAD-4627-ABC1-3EF9B6AFFB8B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4BA0D8C3-0DAD-4627-ABC1-3EF9B6AFFB8B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4BA0D8C3-0DAD-4627-ABC1-3EF9B6AFFB8B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F182BA09-FFCD-4BCA-B40C-D63C9101195F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F182BA09-FFCD-4BCA-B40C-D63C9101195F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F182BA09-FFCD-4BCA-B40C-D63C9101195F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F182BA09-FFCD-4BCA-B40C-D63C9101195F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E5CCEC28-1F1D-47F8-9E02-29AD2A7095A3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E5CCEC28-1F1D-47F8-9E02-29AD2A7095A3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E5CCEC28-1F1D-47F8-9E02-29AD2A7095A3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E5CCEC28-1F1D-47F8-9E02-29AD2A7095A3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{95F80A29-77F5-47A9-8E97-88CDC7C9B788}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{95F80A29-77F5-47A9-8E97-88CDC7C9B788}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{95F80A29-77F5-47A9-8E97-88CDC7C9B788}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{95F80A29-77F5-47A9-8E97-88CDC7C9B788}.Release|Any CPU.Build.0 = Release|Any CPU
+		{10DB2FA1-6AB5-4F72-8E25-DFEAC9B64CE1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{10DB2FA1-6AB5-4F72-8E25-DFEAC9B64CE1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{10DB2FA1-6AB5-4F72-8E25-DFEAC9B64CE1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{10DB2FA1-6AB5-4F72-8E25-DFEAC9B64CE1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3081058A-2C8C-4215-A49A-DC51C7CA659F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3081058A-2C8C-4215-A49A-DC51C7CA659F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3081058A-2C8C-4215-A49A-DC51C7CA659F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3081058A-2C8C-4215-A49A-DC51C7CA659F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1AE99C4D-77BD-42AE-86AC-E9467F37E9AF}
+	EndGlobalSection
+EndGlobal
