@@ -1,15 +1,15 @@
-﻿using OtusDbData.Models;
+﻿using OtusDbData.Contracts;
 
 namespace OtusDbData.Interfaces
 {
     public interface IOtusDataProvider
     {
-        IEnumerable<Course> GetAllCourses();
+        IEnumerable<CourseDto> GetAllCourses();
 
-        IEnumerable<Lesson> GetAllLessons();
+        IEnumerable<LessonDto> GetAllLessons();
 
-        IEnumerable<User> GetAllUsers();
+        IEnumerable<UserDto> GetAllUsers();
 
-        void AddUser(User user);
+        void AddUser(UserDto user);
     }
 }

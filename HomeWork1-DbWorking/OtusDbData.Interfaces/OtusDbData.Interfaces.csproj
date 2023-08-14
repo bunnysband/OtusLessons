@@ -8,7 +8,6 @@
 
   <ItemGroup>
     <ProjectReference Include="..\OtusDbData.Contracts\OtusDbData.Contracts.csproj" />
-    <ProjectReference Include="..\OtusDbData.Models\OtusDbData.Models.csproj" />
   </ItemGroup>
 
 </Project>

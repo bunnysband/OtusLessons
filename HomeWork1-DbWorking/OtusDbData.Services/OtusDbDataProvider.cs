@@ -1,4 +1,6 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using AutoMapper;
+using Microsoft.EntityFrameworkCore;
+using OtusDbData.Contracts;
 using OtusDbData.EF;
 using OtusDbData.Interfaces;
 using OtusDbData.Models;
@@ -9,28 +11,45 @@ namespace OtusDbData.Services
     public class OtusDbDataProvider : IOtusDataProvider
     {
         private readonly OtusDataDbContext _dbContext;
-        public OtusDbDataProvider(OtusDataDbContext dbContext) 
+        private readonly IMapper _mapper;
+        public OtusDbDataProvider(IMapper mapper, OtusDataDbContext dbContext) 
         { 
             _dbContext = dbContext;
+            _mapper = mapper;
         }
 
-        public void AddUser(User user)
+        public void AddUser(UserDto userDto)
         {
+            var user = _mapper.Map<User>(userDto);
             if (_dbContext.Users.Any(u => u.Email == user.Email))
                 throw new AddUserException($"User with email {user.Email} is already exist");
             _dbContext.Users.Add(user);
             _dbContext.SaveChanges();
         }
 
-        public IEnumerable<Course> GetAllCourses() 
-            =>_dbContext.Courses
+        public IEnumerable<CourseDto> GetAllCourses()
+        {
+            var courses = _dbContext.Courses
             .Include(c => c.Lessons)
             .Include(c => c.CreatedBy)
             .Include(c => c.LastUpdatedBy)
             .ToList();
 
-        public IEnumerable<Lesson> GetAllLessons() => _dbContext.Lessons.Include(l => l.Course).ToList();
+            return _mapper.Map<List<CourseDto>>(courses);
+        }
 
-        public IEnumerable<User> GetAllUsers() => _dbContext.Users.ToList();
+        public IEnumerable<LessonDto> GetAllLessons()
+        {
+            var lessons = _dbContext.Lessons.Include(l => l.Course).ToList();
+
+            return _mapper.Map<List<LessonDto>>(lessons);
+        }
+
+        public IEnumerable<UserDto> GetAllUsers()
+        {
+            var users = _dbContext.Users.ToList();
+
+            return _mapper.Map<List<UserDto>>(users);
+        }
     }
 }
