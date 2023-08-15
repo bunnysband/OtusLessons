@@ -5,12 +5,15 @@ using Microsoft.Extensions.Hosting;
 using OtusDbData.Contracts;
 using OtusDbData.EF;
 using OtusDbData.Interfaces;
+using OtusDbData.Models;
 using OtusDbData.Services;
 using OtusDbData.Services.Exceptions;
 
 HostApplicationBuilder builder = Host.CreateApplicationBuilder(args);
 
 builder.Services.AddScoped<IOtusDataProvider, OtusDbDataProvider>();
+builder.Services.AddScoped<IDataRepository, OtusDataDbRepository>();
+builder.Services.AddSingleton<DbContext, OtusDataDbContext>();
 builder.Services.AddAutoMapper(typeof(OtusDbDataProfile));
 var connectionString = builder.Configuration.GetConnectionString("PostgresOtusDb");
 builder.Services.AddDbContext<OtusDataDbContext>(options =>

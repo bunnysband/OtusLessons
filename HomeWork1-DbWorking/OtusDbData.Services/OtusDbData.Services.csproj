@@ -11,8 +11,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\OtusDbData.EF\OtusDbData.EF.csproj" />
     <ProjectReference Include="..\OtusDbData.Interfaces\OtusDbData.Interfaces.csproj" />
+    <ProjectReference Include="..\OtusDbData.Models\OtusDbData.Models.csproj" />
   </ItemGroup>
 
 </Project>
