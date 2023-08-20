@@ -2,12 +2,12 @@
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using OtusDbData.Contracts;
-using OtusDbData.EF;
-using OtusDbData.Interfaces;
-using OtusDbData.Models;
-using OtusDbData.Services;
-using OtusDbData.Services.Exceptions;
+using OtusDbData.Data;
+using OtusDbData.Data.Impl;
+using OtusDbData.Service;
+using OtusDbData.Service.DTO;
+using OtusDbData.Service.Exceptions;
+using OtusDbData.Service.Impl;
 
 HostApplicationBuilder builder = Host.CreateApplicationBuilder(args);
 

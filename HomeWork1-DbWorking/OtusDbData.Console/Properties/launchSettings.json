@@ -1,8 +1,7 @@
 {
   "profiles": {
     "OtusDbData.Console": {
-      "commandName": "Project",
-      "commandLineArgs": "add-user newUser@mail.com UserFirst UserSecond "
+      "commandName": "Project"
     }
   }
 }

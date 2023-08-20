@@ -1,16 +1,15 @@
 ﻿using AutoMapper;
-using OtusDbData.Contracts;
-using OtusDbData.Models;
+using OtusDbData.Data.Entities;
+using OtusDbData.Service.DTO;
 
-namespace OtusDbData.Services
+namespace OtusDbData.Service;
+
+public class OtusDbDataProfile : Profile
 {
-    public class OtusDbDataProfile : Profile
+    public OtusDbDataProfile()
     {
-        public OtusDbDataProfile()
-        {
-            CreateMap<Course, CourseDto>();
-            CreateMap<Lesson, LessonDto>();
-            CreateMap<User, UserDto>().ReverseMap();
-        }
+        CreateMap<Course, CourseDto>();
+        CreateMap<Lesson, LessonDto>();
+        CreateMap<User, UserDto>().ReverseMap();
     }
 }

@@ -1,12 +1,11 @@
-﻿namespace OtusDbData.Services.Exceptions
+﻿namespace OtusDbData.Service.Exceptions;
+
+public class AddUserException : Exception
 {
-    public class AddUserException : Exception
+    public AddUserException() : base()
     {
-        public AddUserException() : base()
-        {
-        }
-        public AddUserException(string? message) : base(message)
-        {
-        }
+    }
+    public AddUserException(string? message) : base(message)
+    {
     }
 }
