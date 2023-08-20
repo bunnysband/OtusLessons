@@ -23,8 +23,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\OtusDbData.EF\OtusDbData.Data.csproj" />
-    <ProjectReference Include="..\OtusDbData.Services\OtusDbData.Service.csproj" />
+    <ProjectReference Include="..\OtusDbData.Data\OtusDbData.Data.csproj" />
+    <ProjectReference Include="..\OtusDbData.Service\OtusDbData.Service.csproj" />
   </ItemGroup>
 
   <ItemGroup>

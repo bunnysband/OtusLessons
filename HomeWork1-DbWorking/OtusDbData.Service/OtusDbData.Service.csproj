@@ -11,7 +11,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\OtusDbData.EF\OtusDbData.Data.csproj" />
+    <ProjectReference Include="..\OtusDbData.Data\OtusDbData.Data.csproj" />
   </ItemGroup>
 
 </Project>

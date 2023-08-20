@@ -5,9 +5,9 @@ VisualStudioVersion = 17.7.34003.232
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OtusDbData.Console", "OtusDbData.Console\OtusDbData.Console.csproj", "{4BA0D8C3-0DAD-4627-ABC1-3EF9B6AFFB8B}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OtusDbData.Data", "OtusDbData.EF\OtusDbData.Data.csproj", "{E5CCEC28-1F1D-47F8-9E02-29AD2A7095A3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OtusDbData.Data", "OtusDbData.Data\OtusDbData.Data.csproj", "{E5CCEC28-1F1D-47F8-9E02-29AD2A7095A3}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OtusDbData.Service", "OtusDbData.Services\OtusDbData.Service.csproj", "{3081058A-2C8C-4215-A49A-DC51C7CA659F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OtusDbData.Service", "OtusDbData.Service\OtusDbData.Service.csproj", "{3081058A-2C8C-4215-A49A-DC51C7CA659F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
