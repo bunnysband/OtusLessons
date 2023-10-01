@@ -7,7 +7,7 @@ RunSerializerDemo(new JsonWrapperSerializer(), "FTest.json");
 
 Console.ReadKey();
 
-static void RunSerializerDemo(IMySerializer serializer, string fileToDeserialize, int iterationsCount = 1000)
+static void RunSerializerDemo(IMySerializer serializer, string fileToDeserialize, int iterationsCount = 10000)
 {
     var serializerName = serializer.GetType().Name;
     Console.WriteLine($"--- Run {serializerName} ---");
@@ -28,7 +28,7 @@ static void RunSerializerDemo(IMySerializer serializer, string fileToDeserialize
 
     Console.WriteLine($"{serializerName} serialized value:");
     Console.WriteLine(serializedValue ?? "Couldn't serialize obj");
-    Console.WriteLine($"{serializerName} serialization time on {iterationsCount} iterations = {stopwatch.Elapsed.TotalMilliseconds}");
+    Console.WriteLine($"{serializerName} serialization time on {iterationsCount} iterations = {Math.Round(stopwatch.Elapsed.TotalMilliseconds)}");
 
     // Deserialization
     var stringToDeserialize = File.ReadAllText(fileToDeserialize);
@@ -43,5 +43,5 @@ static void RunSerializerDemo(IMySerializer serializer, string fileToDeserialize
     stopwatch.Stop();
     Console.WriteLine($"{serializerName} deserialized object:");
     Console.WriteLine(deserializedObj?.ToString() ?? "Couldn't serialize obj");
-    Console.WriteLine($"{serializerName} deserialization time on {iterationsCount} iterations = {stopwatch.Elapsed.TotalMilliseconds}");
+    Console.WriteLine($"{serializerName} deserialization time on {iterationsCount} iterations = {Math.Round(stopwatch.Elapsed.TotalMilliseconds)}");
 }
